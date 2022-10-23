@@ -1,0 +1,176 @@
+
+
+/*Règle général*/
+
+.flex_center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.w100{
+    width: 100%;
+}
+
+.entête_typo{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/*Sur toute la page*/
+
+body{
+    margin: 0;
+}
+
+
+
+
+
+/*Header*/
+
+header{
+    background-color: black;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#jbl_logo img{
+    width: 40%;
+}
+
+#jbl_charge_5{
+    text-align: center;
+    color: white;
+    font-size: 160%;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.mes_liens{
+    color: white;
+    font-size: 160%;
+}
+
+
+/*main*/
+
+main{
+    flex-direction: column;
+}
+
+
+#video_liste{
+    display: flex;
+    justify-content: space-evenly;
+    align-items : center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#notre_produit{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 160%;
+} 
+
+
+.conteneur_photo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteneur_photo img{
+    width: 20%;
+    margin: 3px;
+    padding-bottom: 50px;
+}
+
+
+/*Footer*/
+
+footer{
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: black;
+}
+
+
+.maps_et_texte{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.coordonnees_mention_legale{
+    display: flex;
+    flex-direction:column;
+    width: 20%;
+    color: white;
+}
+
+h2{ /*Les titres des paragraphes*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+/*Responsive*/
+
+
+@media all and (max-device-width:480px)
+{
+
+/*Header modif*/
+
+.mes_liens{
+    font-size: 110%;
+}
+
+
+/*Main modif*/
+
+#video_liste{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteneur_photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.conteneur_photo img{
+    width: 70%;
+    margin: 3px;
+}
+
+/*Footer modif*/
+
+.maps_et_texte{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.coordonnees_mention_legale{
+    width: 15%;
+}
+
+
+}
